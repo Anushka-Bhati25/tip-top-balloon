@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Users/kashi/OneDrive/Desktop/salon"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "salon"
+	}
+}

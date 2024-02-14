@@ -1,0 +1,22 @@
+<div class="col-md-3 mt-3">
+                <div class="card  shadow ">
+                    <div class="geeks">
+                        <img src="imagemain/aniversery/decor-image.jpg" class="img-fluid shadow">
+                    </div>
+
+
+                </div>
+                <div class="card mt-2 p-3 text-center card-data">
+                    <h3>Birthday Decoration</h3>
+                    <p>A1 Happy Birthday Decoration Items - 26 Pcs  Golden | Black | White Combination Birthday Decoration Items</p>
+                    <!--<div class="row my-2">-->
+                    <!--    <div class="col-6 crossed text-end">-->
+                    <!--        <h4>₹ 3000</h4>-->
+                    <!--    </div>-->
+                    <!--    <div class="col-6  text-start">-->
+                    <!--        <h4>₹ 2500</h4>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <a onclick="gtag_call_conversion();" href="tel: +919560495333">Call Now</a>
+                </div>
+            </div>
