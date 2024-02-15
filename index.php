@@ -1,5 +1,3 @@
-
-
 <?php
 // Include the header file
 include('header.php');
@@ -33,7 +31,27 @@ include('header.php');
       </span>
     </div>
   </div>
-  
+
+  <div class="process_form_class" style=" display: block; position: absolute; top: 50%; right: 10%; transform: translateY(-50%); z-index: 2; padding: 10px; background-color: rgba(255, 255, 255, 0.8); border-radius:30px; border:2px solid #0d1193; max-width: 330px;">
+    <h2 class="title" style="background-color:white; border-radius:30px; color:#1914ad; margin-top: 0; align-items: center; text-align: center; font-weight: bold !important;">
+      Make an Appointment</h2>
+    <form action="process_form_banner.php" method="post" class="text-center">
+      <div class="form-group">
+        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="phone_number" placeholder="Phone Number" name="phone_number" required>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" rows="3" id="message" placeholder="Message" name="message" required></textarea>
+      </div>
+      <button type="submit" onclick="showPopup()" class="btn rounded" style="background-color: red ; color:aliceblue;">Book Now</button>
+    </form>
+  </div>
+
   <div class="container">
     <div class="row">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -43,15 +61,15 @@ include('header.php');
               <div class="detail_box">
                 <h2><span class="head-z">Welcome to</span></h2><br>
                 <h1><span id="head-c" class="head-b">
-                 Tip Top Balloon</span></h1>
-            
-                  <!-- <ul class="un-oder-list">
+                    Tip Top Balloon</span></h1>
+
+                <!-- <ul class="un-oder-list">
                     <li><h5 class="d-inline fw-bolder">Tip Top Balloon :- </h5><span>Where Every Celebration Sparkles with Magic and Detail!</span></li>
                     <li><h5 class="d-inline ">Transforming Moments into Memories :- </h5><span>Tip Top Balloon, Your Premier Decoration Specialists</span></li>
                     <li><h5 class="d-inline ">Elevate Your Occasions with Tip Top Balloon :-</h5><span>  Creativity at Its Finest</li></span>
                   </ul> -->
                 <!-- <div> -->
-                  <!-- <a href="">Browse Services</a> -->
+                <!-- <a href="">Browse Services</a> -->
                 <!-- </div> -->
               </div>
             </div>
@@ -59,8 +77,8 @@ include('header.php');
         </div>
       </div>
     </div>
-  
-          <!-- <div class="carousel-item">
+
+    <!-- <div class="carousel-item">
             <div class="col-lg-12 col-md-8">
               <div class="detail_box">
                 <h2>Welcome to</h2>
@@ -78,13 +96,13 @@ include('header.php');
                       <h5 class="d-inline">Unique Themes, Irresistible Offers :- </h5><span>Tip Top Balloon Sets the Stage for Your Celebrations</span>
                     </li>
                   </ul> -->
-                  <!-- <a href="">Explore Services</a> -->
-                <!-- </div>
+    <!-- <a href="">Explore Services</a> -->
+    <!-- </div>
               </div>
             </div>
           </div> -->
 
-          <!-- <div class="carousel-item">
+    <!-- <div class="carousel-item">
             <div class="col-lg-12 col-md-8">
               <div class="detail_box">
                 <h2>Welcome to</h2>
@@ -109,8 +127,8 @@ include('header.php');
           </div> -->
 
 
-        <!-- </div> -->
-        <!-- <div class="carousel_btn-container mt-4">
+    <!-- </div> -->
+    <!-- <div class="carousel_btn-container mt-4">
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="sr-only">Previous</span>
           </a>
@@ -127,7 +145,7 @@ include('header.php');
 </div>
 <!-- about section -->
 <section class="about_section ">
- 
+
   <!-- <div class="container">
     <div class="row">
       <div class="col-md-5 col-xl-5">
@@ -140,8 +158,8 @@ include('header.php');
             
           </div>
       </div>-->
-      <!-- img div  -->
-      <!-- <div class="col-md-6 col-xl-7">
+  <!-- img div  -->
+  <!-- <div class="col-md-6 col-xl-7">
         <div class="img-box">
           <img src="images/gallery/officeparty.jpg" alt="" width="auto" height="400px" class="shadow-risen p-3 bg-dark" />
         </div>
@@ -149,22 +167,22 @@ include('header.php');
     </div>
   </div> -->
   <div class="container-fluid my-5">
-      <div class="row">
-         <div class="col-md-6 abt-bannier">  
-          <!-- <div class="img-box">
+    <div class="row">
+      <div class="col-md-6 abt-bannier">
+        <!-- <div class="img-box">
           <img src="images/gallery/officeparty.jpg" alt="" width="800px" height="800px" class="shadow-risen p-3 bg-dark" />
         </div>    -->
-         </div>
-         <div class="col-md-5 offset-md-1">
-            <div class="abt-data">
-            <h2 class="mt-5">About <span id="head-c">Tip Top </span> Balloon</h2><br>
-            <h1 class="my-4">One of the <span id="head-c">BEST </span>party decoration<br> By Our Professionals  In Gurgaon</h1>
-            <p class="mb-5">At Tip Top Balloon, we're passionate about transforming ordinary events into extraordinary experiences. With our extensive expertise and creative flair, we specialize in crafting mesmerizing balloon arrangements that add a touch of magic to every celebration.
-            Whether it's a birthday bash, wedding reception, corporate event, or any special occasion, we bring innovation and imagination to every project. Our commitment is to go beyond expectations, offering personalized and unforgettable balloon decorations that turn moments into cherished memories.
-                </p>
-         </div>
-            </div>
       </div>
+      <div class="col-md-5 offset-md-1">
+        <div class="abt-data">
+          <h2 class="mt-5">About <span id="head-c">Tip Top </span> Balloon</h2><br>
+          <h1 class="my-4">One of the <span id="head-c">BEST </span>party decoration<br> By Our Professionals In Gurgaon</h1>
+          <p class="mb-5">At Tip Top Balloon, we're passionate about transforming ordinary events into extraordinary experiences. With our extensive expertise and creative flair, we specialize in crafting mesmerizing balloon arrangements that add a touch of magic to every celebration.
+            Whether it's a birthday bash, wedding reception, corporate event, or any special occasion, we bring innovation and imagination to every project. Our commitment is to go beyond expectations, offering personalized and unforgettable balloon decorations that turn moments into cherished memories.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <!-- end about section -->
@@ -184,11 +202,11 @@ include('header.php');
     <!-- item 1 -->
     <div class="col-md-3 mt-3">
       <div class="card shadow">
-        <div class="geeks">        
-            <img src="images/service-img/01birthday.jpg" class="img-fluid shadow" alt="First Night Surprise Room Decor Image" style="width: 100%; height: 300px;">
+        <div class="geeks">
+          <img src="images/service-img/01birthday.jpg" class="img-fluid shadow" alt="First Night Surprise Room Decor Image" style="width: 100%; height: 300px;">
         </div>
       </div><br>
-      
+
       <div class="card mt-2 p-3 text-center card-data">
         <h3 class="hedd">Birthday Decoration</h3>
         <p>With our colorful birthday decorations, you may completely change your party! We have everything you need for a spectacular party, including vibrant balloons and festive banners.</p>
@@ -219,7 +237,7 @@ include('header.php');
       <br>
       <div class="card p-3 text-center card-data">
         <h3>Baby Shower</h3>
-        <p>Decorate your baby shower with  style and charm. Our services make 
+        <p>Decorate your baby shower with style and charm. Our services make
           your special day happier and cozier. Explore delightful themes and easily make enduring memories.Help us to make your day more special for you . Reserve now</p>
         <a onclick="gtag_call_conversion();" href="tel:+91 8504962589" style="display: inline-block; background-color:red ; border-radius: 8px; padding: 8px 16px; color: white; text-decoration: none;">Call Now</a>
       </div>
@@ -237,58 +255,58 @@ include('header.php');
         <a onclick="gtag_call_conversion();" href="tel:+91 8504962589" style="display: inline-block; background-color:red ; border-radius: 8px; padding: 8px 16px; color: white; text-decoration: none;">Call Now</a>
       </div>
     </div>
-   </div><br><br>
-    <div class="baby-shower-section">
-   <hr class="border border-danger border-2 opacity-50">
-      <h2 class="text-center" style="color: red; font-weight: bold;">Baby Shower Decoration</h2>
-      <div class="row">
-    <!-- item 5 -->
-    <div class="col-md-3 mt-3">
-      <div class="card shadow">
-        <div class="geeks">
-          <img src="images/service-img/12ringdecoration.webp" class="img-fluid shadow" alt="First Night Surprise Room Decor Image" style="width: 100%; height: 300px;">
+  </div><br><br>
+  <div class="baby-shower-section">
+    <hr class="border border-danger border-2 opacity-50">
+    <h2 class="text-center" style="color: red; font-weight: bold;">Baby Shower Decoration</h2>
+    <div class="row">
+      <!-- item 5 -->
+      <div class="col-md-3 mt-3">
+        <div class="card shadow">
+          <div class="geeks">
+            <img src="images/service-img/12ringdecoration.webp" class="img-fluid shadow" alt="First Night Surprise Room Decor Image" style="width: 100%; height: 300px;">
+          </div>
+        </div><br>
+        <div class="card p-3 text-center card-data">
+          <h3>Ring Decorate Oh Baby</h3>
+          <p>"Ring Decorate, Oh Baby!" With our adorable decorations, you can create a whimsical atmosphere that is ideal for stylishly and lovingly welcoming your little one.
+          </p>
+          <a onclick="gtag_call_conversion();" href="tel:+91 8504962589" style="display: inline-block; background-color:red ; border-radius: 8px; padding: 8px 16px; color: white; text-decoration: none;">Call Now</a>
         </div>
-      </div><br>
-      <div class="card p-3 text-center card-data">
-        <h3>Ring Decorate Oh Baby</h3>
-        <p>"Ring Decorate, Oh Baby!" With our adorable decorations, you can create a whimsical atmosphere that is ideal for stylishly and lovingly welcoming your little one.
-        </p>
-        <a onclick="gtag_call_conversion();" href="tel:+91 8504962589" style="display: inline-block; background-color:red ; border-radius: 8px; padding: 8px 16px; color: white; text-decoration: none;">Call Now</a>
       </div>
-    </div>
-    
-    <!-- item 6 -->
-    <div class="col-md-3 mt-3">
-      <div class="card shadow">
-        <div class="geeks">
-          <img src="images/service-img/23ohbaby.jpg" class="img-fluid shadow" alt="First Night Surprise Room Decor Image" style="width: 100%; height: 300px;">
+
+      <!-- item 6 -->
+      <div class="col-md-3 mt-3">
+        <div class="card shadow">
+          <div class="geeks">
+            <img src="images/service-img/23ohbaby.jpg" class="img-fluid shadow" alt="First Night Surprise Room Decor Image" style="width: 100%; height: 300px;">
+          </div>
+        </div><br>
+        <div class="card p-3 text-center card-data">
+          <h3>Oh Baby U Shape Decoration</h3>
+          <p>"Create a stylish 'Oh Baby' U-shape decoration that adds a trendy and festive touch to your party ambiance with flair and charm."
+          </p>
+          <a onclick="gtag_call_conversion();" href="tel:+91 8504962589" style="display: inline-block; background-color:red ; border-radius: 8px; padding: 8px 16px; color: white; text-decoration: none;">Call Now</a>
         </div>
-      </div><br>
-      <div class="card p-3 text-center card-data">
-        <h3>Oh Baby U Shape Decoration</h3>
-        <p>"Create a stylish 'Oh Baby' U-shape decoration that adds a trendy and festive touch to your party ambiance with flair and charm."
-        </p>
-        <a onclick="gtag_call_conversion();" href="tel:+91 8504962589" style="display: inline-block; background-color:red ; border-radius: 8px; padding: 8px 16px; color: white; text-decoration: none;">Call Now</a>
       </div>
-    </div>
-    
-    <!-- item 7 -->
-    <div class="col-md-3 mt-3">
-      <div class="card shadow">
-        <div class="geeks">
-          <img src="images/service-img/18birthday.jpg" class="img-fluid shadow" alt="First Night Surprise Room Decor Image" style="width: 100%; height: 300px;">
+
+      <!-- item 7 -->
+      <div class="col-md-3 mt-3">
+        <div class="card shadow">
+          <div class="geeks">
+            <img src="images/service-img/18birthday.jpg" class="img-fluid shadow" alt="First Night Surprise Room Decor Image" style="width: 100%; height: 300px;">
+          </div>
+        </div><br>
+        <div class="card p-3 text-center card-data">
+          <h3>Birthday Decoration For Boy Baby</h3>
+          <p>Use our adorable decorations to make your boy baby's birthday truly memorable. Using colorful themes and lively hues, plan an unforgettable, joyous celebration.
+          </p>
+          <a onclick="gtag_call_conversion();" href="tel:+91 8504962589" style="display: inline-block; background-color:red ; border-radius: 8px; padding: 8px 16px; color: white; text-decoration: none;">Call Now</a>
         </div>
-      </div><br>
-      <div class="card p-3 text-center card-data">
-        <h3>Birthday Decoration For Boy Baby</h3>
-        <p>Use our adorable decorations to make your boy baby's birthday truly memorable. Using colorful themes and lively hues, plan an unforgettable, joyous celebration.
-        </p>
-        <a onclick="gtag_call_conversion();" href="tel:+91 8504962589" style="display: inline-block; background-color:red ; border-radius: 8px; padding: 8px 16px; color: white; text-decoration: none;">Call Now</a>
       </div>
-    </div>
-   
-    <!-- item 8 -->
-    <div class="col-md-3 mt-3">
+
+      <!-- item 8 -->
+      <div class="col-md-3 mt-3">
         <div class="card shadow">
           <div class="geeks">
             <img src="images/service-img/06partydecoratin.jpg" class="img-fluid shadow" alt="First Night Surprise Room Decor Image" style="width: 100%; height: 300px;">
@@ -303,14 +321,15 @@ include('header.php');
       </div>
 
 
-    </div></div><br><br>
-    <hr class="border border-danger border-2 opacity-50">
-    
-   
+    </div>
+  </div><br><br>
+  <hr class="border border-danger border-2 opacity-50">
+
+
   <h2 class="text-center" style="color: red; font-weight: bold;">Anniversary Decoration</h2>
   <div style="justify-content: center;display: flex;padding: 5px 0 5px 0px;">
-                <div class="separator_keep"><span></span></div>
-            </div>
+    <div class="separator_keep"><span></span></div>
+  </div>
   <div class="row">
     <!-- item 9 -->
     <div class="col-md-3 mt-3">
@@ -342,7 +361,7 @@ include('header.php');
       </div>
     </div>
     <!-- item 11 -->
-     <div class="col-md-3 mt-3">
+    <div class="col-md-3 mt-3">
       <div class="card shadow">
         <div class="geeks">
           <img src="images/service-img/11betterTogether.webp" class="img-fluid shadow" alt="First Night Surprise Room Decor Image" style="width: 100%; height: 300px;">
@@ -353,8 +372,8 @@ include('header.php');
         <p>Use our "Better Together" décor theme to foster a sense of unity. Enhance areas with coziness, charm, and unique details for special occasions.</p>
         <br>
         <a onclick="gtag_call_conversion();" href="tel:+91 8504962589" style="display: inline-block; background-color:red ; border-radius: 8px; padding: 8px 16px; color: white; text-decoration: none;">Call Now</a>
-      </div> 
-    </div> 
+      </div>
+    </div>
     <!-- item 12 -->
     <div class="col-md-3 mt-3">
       <div class="card shadow">
@@ -368,7 +387,7 @@ include('header.php');
         <a onclick="gtag_call_conversion();" href="tel:+91 8504962589" style="display: inline-block; background-color:red ; border-radius: 8px; padding: 8px 16px; color: white; text-decoration: none;">Call Now</a>
       </div>
     </div>
-</div>
+  </div>
 </div>
 
 <br>
@@ -384,7 +403,8 @@ include('header.php');
     <div class="row">
       <div class="col-12">
         <h2>Why Choose
-        <span id="head-c">Tip Top </span>Balloon</h2>
+          <span id="head-c">Tip Top </span>Balloon
+        </h2>
         <p>Experience the difference with
           Tip Top Balloon. Our dedication to excellence and creativity sets us apart. With a legacy of crafting mesmerizing balloon designs that transcend ordinary decor, we bring over [insert years of experience] years of expertise to every event. Trust us to transform your celebrations into unforgettable experiences.</p>
         <div>
@@ -414,13 +434,13 @@ include('gallerys.php');
     <div class="heading_container justify-content-center">
       <h2>Hear from Our <span id="head-c">Customers</span></h2>
       <!-- <div class="section_number">04</div>-->
-    </div> 
+    </div>
   </div>
   <?php
-// Include the header file
-include('Client.php');
-?>
-  
+  // Include the header file
+  include('Client.php');
+  ?>
+
 </section>
 
 
